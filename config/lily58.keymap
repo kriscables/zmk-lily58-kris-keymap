@@ -13,8 +13,11 @@
         em1: em1{
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                =  <&kp k &kp r &kp i &kp s &kp c &kp a &kp b &kp l &kp e &kp s &kp g &kp m &kp a &kp i &kp l &kp c &kp o &kp m>;
+            bindings =  <&macro_tap
+                    "k" "r" "i" "s" "c" "a" "b" "l" "e" "s"
+                    &macro_press &kp LSHFT &macro_tap "2" &macro_release
+                    "g" "m" "a" "i" "l"
+                    &macro_tap "." "c" "o" "m">;
         };
     };
 };
