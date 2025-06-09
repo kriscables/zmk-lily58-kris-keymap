@@ -6,16 +6,16 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h> 
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/macro.h>
 
+#define EM1 "kriscables@gmail.com"
 / {
     macros {
         em1: em1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_string "kriscables@gmail.com">
-                ;
+            bindings = <&macro_string EM1>;
         };
     };
 };
