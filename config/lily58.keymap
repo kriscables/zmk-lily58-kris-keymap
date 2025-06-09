@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap "kriscables@gmail.com">
+                = <&macro_string "kriscables@gmail.com">
                 ;
         };
     };
