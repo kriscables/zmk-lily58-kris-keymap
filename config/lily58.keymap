@@ -7,14 +7,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h> 
-#include <dt-bindings/zmk/macro.h>
 
-#define EM1_STR "kriscables@gmail.com"
-ZMK_MACRO(em1,
-    wait-ms = <0>;
-    tap-ms = <10>;
-    bindings = <&macro_string EM1_STR &kp ENTER>;
-)
+/ {
+    macros {
+        em1: em1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap
+                    "k" "r" "i" "s" "c" "a" "b" "l" "e" "s"
+                    &macro_press &kp LSHFT &macro_tap "2" &macro_release // Shift + 2 = "@"
+                    "g" "m" "a" "i" "l" "." "c" "o" "m">
+                ;
+        };
+    };
+};
 
 / {
 	keymap {
