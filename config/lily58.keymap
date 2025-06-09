@@ -13,7 +13,7 @@
         em1: em1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp k &kp r &kp i &kp s &kp c &kp a &kp b &kp l &kp e &kp s>
+            bindings = <&macro_tap &kp K &kp R &kp I &kp S &kp C &kp A &kp B &kp L &kp E &kp S>
 		    ;
         };
     };
