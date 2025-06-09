@@ -14,10 +14,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap
-                    "k" "r" "i" "s" "c" "a" "b" "l" "e" "s"
-                    &macro_press &kp LSHFT &macro_tap "2" &macro_release // Shift + 2 = "@"
-                    "g" "m" "a" "i" "l" "." "c" "o" "m">
+                = <&macro_tap "kriscables@gmail.com">
                 ;
         };
     };
