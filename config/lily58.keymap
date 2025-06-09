@@ -9,9 +9,6 @@
 #include <dt-bindings/zmk/ext_power.h> 
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
-/ {
     macros {
         em1: em1 {
             compatible = "zmk,behavior-macro";
@@ -21,6 +18,10 @@
         };
     };
 };
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
 
 		default_layer {
 // ------------------------------------------------------------------------------------------------------------
