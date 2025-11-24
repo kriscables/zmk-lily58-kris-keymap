@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N5>, <&kp LCTRL, &kp LALT, &kp N5>;
+            bindings = <&kp N5>, <&kp RCTRL, &kp RALT, &kp N5>;
         };
     };
 
