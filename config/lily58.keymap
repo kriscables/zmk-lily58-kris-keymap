@@ -26,15 +26,18 @@
 	eur: eur {
 	            compatible = "zmk,behavior-macro";
 	            #binding-cells = <0>;
-		    wait-ms = <0.5>;
-	            bindings = <&macro_tap &kp RCTRL &kp RALT &kp N5>;
+		    wait-ms = <1>;
+	            bindings = 
+				= <&macro_press &kp RCTRL &kp RALT>
+                , <&macro_tap &kp N5>
+                , <&macro_release &kp RCTRL &kp RALT>
 	        };
     };
 }; 
 
 / {
     behaviors {
-        td0: tap_dance_5_eur {
+        td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
