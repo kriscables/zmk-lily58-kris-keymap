@@ -22,6 +22,7 @@
 	    wait-ms = <1>;
             bindings = <&macro_tap &kp C &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp M &kp I &kp T &kp U &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M >;
         };
+	};
 }; 
 
 
