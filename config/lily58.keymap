@@ -53,7 +53,7 @@
 // |BTCLR  | BT1 | BT2 |  BT3 | BT4  |EPOFF	| EXPP_ON|  |       |      |       |       |      |       |  DEL  |
 //                     |      |      |      |        |  |       |      |       |       |
 			bindings = <
-&kp BSPC   &em1    &em2    &trans   &trans  &unicode U20AC                                        &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6  
+&kp BSPC   &em1    &em2    &trans   &trans  &trans                                       &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6  
 &kp SPACE  &trans  &trans  &trans   &trans  &trans                                         &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
 &trans     &trans  &trans  &trans   &trans  &trans                                         &trans    &trans    &trans    &trans    &trans    &trans
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &ext_power EP_OFF  &ext_power EP_ON   &trans   &trans    &trans    &trans    &trans    &trans    &kp DELETE
