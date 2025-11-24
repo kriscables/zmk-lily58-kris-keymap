@@ -24,9 +24,9 @@
         };
 
 	eur: eur {
-	    compatible = "zmk,behavior-unicode-ucp";
+	    compatible = "zmk,behavior-macro";
 	    #binding-cells = <0>;
-	    unicode = <0x20AC>;
+	    bindings = <&kp U20AC>;
 		};
     };
 }; 
