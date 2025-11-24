@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
-#include <behaviors/unicode.dtsi>
 
 / {
     macros {
@@ -23,13 +22,6 @@
 	    wait-ms = <1>;
             bindings = <&macro_tap &kp C &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp M &kp I &kp T &kp U &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M >;
         };
-
-	eur: eur {
-	    compatible = "zmk,behavior-macro";
-	    #binding-cells = <0>;
-	    unicode = <0x20AC>;
-		};
-    };
 }; 
 
 
@@ -46,7 +38,7 @@
 // |  SHFT |  Z  |  X  |  C   |  V   |  B   |   , <  |  |  . >  |  N   |  M    |  /    |  <-  |   v   |   ->  |
 //                   | LOWER  | ALT  | CTRL |  ENTER |  | SPACE | BSPC | RAISE |RSHFTCAPS|
 			bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &eur                       &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp EQUAL
+&kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                       &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp EQUAL
 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y  &kp U    &kp I     &kp O    &kp P    &kp MINUS
 &kp LGUI  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H  &kp J    &kp K     &kp L    &kp UP   &kp SEMI
 &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B     &kp COMMA &kp DOT   &kp N  &kp M    &kp FSLH  &kp LEFT &kp DOWN &kp RIGHT
