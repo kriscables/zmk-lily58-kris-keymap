@@ -24,14 +24,10 @@
         };
 
 	eur: eur {
-	            compatible = "zmk,behavior-macro";
-	            #binding-cells = <0>;
-		    wait-ms = <1>;
-	            bindings = 
-					<&macro_press &kp RCTRL &kp RALT>
-                , <&macro_tap &kp N5>
-                , <&macro_release &kp RCTRL &kp RALT>
-	        };
+	    compatible = "zmk,behavior-unicode-ucp";
+	    #binding-cells = <0>;
+	    unicode = <0x20AC>;
+		};
     };
 }; 
 
