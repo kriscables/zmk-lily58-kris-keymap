@@ -26,16 +26,6 @@
 }; 
 
 / {
-    behaviors {
-        td5: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N5>, <&kp RCTRL, &kp RALT, &kp N5>;
-        };
-    };
-
-/ {
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -47,7 +37,7 @@
 // |  SHFT |  Z  |  X  |  C   |  V   |  B   |   , <  |  |  . >  |  N   |  M    |  /    |  <-  |   v   |   ->  |
 //                   | LOWER  | ALT  | CTRL |  ENTER |  | SPACE | BSPC | RAISE |RSHFTCAPS|
 			bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &td5                        &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp EQUAL
+&kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                       &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp EQUAL
 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T                         &kp Y  &kp U    &kp I     &kp O    &kp P    &kp MINUS
 &kp LGUI  &kp A  &kp S  &kp D  &kp F  &kp G                         &kp H  &kp J    &kp K     &kp L    &kp UP   &kp SEMI
 &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B     &kp COMMA &kp DOT   &kp N  &kp M    &kp FSLH  &kp LEFT &kp DOWN &kp RIGHT
@@ -63,7 +53,7 @@
 // |BTCLR  | BT1 | BT2 |  BT3 | BT4  |EPOFF	| EXPP_ON|  |       |      |       |       |      |       |  DEL  |
 //                     |      |      |      |        |  |       |      |       |       |
 			bindings = <
-&kp BSPC   &em1    &em2    &trans   &trans  &trans                                         &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6  
+&kp BSPC   &em1    &em2    &trans   &trans  &kp LG(ALT_OPTION) E                                         &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6  
 &kp SPACE  &trans  &trans  &trans   &trans  &trans                                         &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
 &trans     &trans  &trans  &trans   &trans  &trans                                         &trans    &trans    &trans    &trans    &trans    &trans
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &ext_power EP_OFF  &ext_power EP_ON   &trans   &trans    &trans    &trans    &trans    &trans    &kp DELETE
